@@ -11,7 +11,8 @@
     "no-plusplus": "off",
     "max-classes-per-file": "off",
     "react/jsx-filename-extension": "off",
-    "react/prefer-stateless-function": "off"
+    "react/prefer-stateless-function": "off",
+    "react/state-in-constructor": "off"
   },
   "env": {
     "jest/globals": true,
