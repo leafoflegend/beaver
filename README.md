@@ -10,8 +10,9 @@ It's called **beaver** cause **beaver**s build things. Obviously.
 ### How to Use
 
 1. As always, `npm i`
-2. Work in the `/src` folder. Feel free to write tests in the `/tests`
+2. Work in the `/client` folder to build the web application. Work in the `server` folder to build the server application. Feel free to write tests in the `/tests`
 3. Use the commands from the commands section to do all sorts of cool stuff.
+4. To configure the server, you can add a `.env` file to the repo at the root level, and write configuration keys in there.
 
 ### Commands
 
@@ -19,7 +20,8 @@ For all of these say `npm run ${command_name_below}`.
 
 - `test`: Run all test files ending with `.spec.js`.
 - `test:watch`: Run all test files and monitor for changes.
-- `start`: Open your work in the browser, hot reload, have fun. Ideal for development.
+- `start:client`: Open your work in the browser, hot reload, have fun. Ideal for development.
+- `start:server`: Start running the server in development mode.
 - `build`: Build your code for production (e.g. deployment).
 - `build:watch`: Build your code and watch it in development mode. Must open the `index.html` file yourself in `/dist`. Useful if `webpack-dev-server` gives you problems.
 - `lint`: Tells you all the problems with your codes style.
