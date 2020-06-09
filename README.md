@@ -20,6 +20,7 @@ For all of these say `npm run ${command_name_below}`.
 
 - `test`: Run all test files ending with `.spec.js`.
 - `test:watch`: Run all test files and monitor for changes.
+- `start`: Meant for production. Starts the server in production mode.
 - `start:client`: Open your work in the browser, hot reload, have fun. Ideal for development.
 - `start:server`: Start running the server in development mode.
 - `build`: Build your code for production (e.g. deployment).
