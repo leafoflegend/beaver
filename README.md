@@ -28,3 +28,7 @@ For all of these say `npm run ${command_name_below}`.
 - `lint`: Tells you all the problems with your codes style.
 - `format:src`: Attempts to fix all the problems with your codes style in the `/src` folder.
 - `format:tests`: Attempts to fix all the problems with your codes style in the `/tests` folder.
+
+### Configuration
+
+You may include a `.env` file in the root directory to modify how `beaver` behaves. Please look for `process.env[NAME]` in the repository to discover what pre-included configs are available. You may obviously extend this (and anything and everything else) if you so desire.
