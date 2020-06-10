@@ -20,8 +20,10 @@
     "build": "webpack --mode=\"production\"",
     "build:watch": "webpack --watch",
     "lint": "eslint client server tests",
-    "format:src": "prettier-eslint --write --single-quote --semi \"$PWD/src/**/*.js\"",
-    "format:tests": "prettier-eslint --write --single-quote --semi \"$PWD/tests/**/*.js\""
+    "format:client": "prettier-eslint --write --single-quote --semi \"$PWD/client/**/*.js\"",
+    "format:tests": "prettier-eslint --write --single-quote --semi \"$PWD/tests/**/*.js\"",
+    "format:server": "prettier-eslint --write --single-quote --semi \"$PWD/server/**/*.js\"",
+    "format": "npm run format:client && npm run format:tests && npm run format:server"
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",

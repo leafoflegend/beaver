@@ -26,8 +26,10 @@ For all of these say `npm run ${command_name_below}`.
 - `build`: Build your code for production (e.g. deployment).
 - `build:watch`: Build your code and watch it in development mode. Must open the `index.html` file yourself in `/dist`. Useful if `webpack-dev-server` gives you problems.
 - `lint`: Tells you all the problems with your codes style.
-- `format:src`: Attempts to fix all the problems with your codes style in the `/src` folder.
+- `format:client`: Attempts to fix all the problems with your codes style in the `/client` folder.
 - `format:tests`: Attempts to fix all the problems with your codes style in the `/tests` folder.
+- `format:server`: Attempts to fix all the problems with your codes style in the `/server` folder.
+- `format`: Attempts fix all problems with your codes style across all three aforementioned directories.
 
 ### Configuration
 
