@@ -1,7 +1,7 @@
-<div style='display: flex; flex-direction: column; width: 100vw; align-items: center; justify-content: center'>
+<p align="center">
     <img style="height: 250px;" src='https://pbs.twimg.com/profile_images/2779323089/f1d2488fedff90047a32244dbc624e59_400x400.jpeg'/>
     <h2>Beaver</h2>
-</div>
+</p>
 
 `Beaver` is a *"boiler plate"*. Its a foundation to build apps upon.
 
