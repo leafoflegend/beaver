@@ -29,7 +29,7 @@ For all of these say `npm run ${command_name_below}`.
 - `format:client`: Attempts to fix all the problems with your codes style in the `/client` folder.
 - `format:tests`: Attempts to fix all the problems with your codes style in the `/tests` folder.
 - `format:server`: Attempts to fix all the problems with your codes style in the `/server` folder.
-- `format`: Attempts fix all problems with your codes style across all three aforementioned directories.
+- `format`: Attempts to fix all problems with your codes style across all three aforementioned directories.
 
 ### Configuration
 
