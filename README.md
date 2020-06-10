@@ -10,7 +10,7 @@ It's called **beaver** cause **beaver**s build things. Obviously.
 ### How to Use
 
 1. As always, `npm i`
-2. Work in the `/client` folder to build the web application. Work in the `server` folder to build the server application. Feel free to write tests in the `/tests`
+2. Work in the `/client` folder to build the web application. Work in the `/server` folder to build the server application. Feel free to write tests in the `/tests`
 3. Use the commands from the commands section to do all sorts of cool stuff.
 4. To configure the server, you can add a `.env` file to the repo at the root level, and write configuration keys in there.
 
