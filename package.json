@@ -4,16 +4,22 @@
   "description": "This is a \"boiler plate\". Its a foundation to build apps upon.",
   "main": "index.js",
   "dependencies": {
+    "chalk": "^4.0.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0"
   },
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watchAll",
-    "start": "webpack-dev-server --open",
+    "start": "NODE_ENV=\"production\" node server/index.js",
+    "start:client": "webpack-dev-server --open",
+    "start:server": "node-dev --respawn server/index.js",
     "build": "webpack --mode=\"production\"",
     "build:watch": "webpack --watch",
-    "lint": "eslint src tests",
+    "lint": "eslint client server tests",
     "format:src": "prettier-eslint --write --single-quote --semi \"$PWD/src/**/*.js\"",
     "format:tests": "prettier-eslint --write --single-quote --semi \"$PWD/tests/**/*.js\""
   },
@@ -38,6 +44,7 @@
     "eslint-plugin-react-hooks": "^4.0.2",
     "html-webpack-plugin": "^4.3.0",
     "jest": "^26.0.1",
+    "node-dev": "^4.0.0",
     "prettier": "^2.0.5",
     "prettier-eslint": "^9.0.1",
     "prettier-eslint-cli": "^5.0.0",

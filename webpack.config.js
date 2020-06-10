@@ -1,22 +1,31 @@
 const path = require('path');
+const dotenv = require('dotenv');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { EnvironmentPlugin } = require('webpack');
+
+const API_URL = process.env.API_URL || 'http://localhost';
+const PORT = process.env.PORT || 3000;
 
 module.exports = {
-  entry: path.join(__dirname, './src/index.js'),
+  entry: path.join(__dirname, './client/index.js'),
   mode: 'development',
   devtool: 'source-map',
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     compress: true,
-    port: 3000,
+    port: 3001,
   },
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.join(__dirname, 'dist'),
     filename: 'app.js',
   },
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Beaver',
+      template: path.join(__dirname, './client/template/index.ejs'),
+    }),
+    new EnvironmentPlugin({
+      API_URL: `${API_URL}:${PORT}`,
     }),
   ],
   module: {
