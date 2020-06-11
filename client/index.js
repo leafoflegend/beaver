@@ -22,9 +22,9 @@ class App extends Component {
         });
       })
       .catch((e) => {
-        if (e instanceof Error && e.message && e.message === 'Delay') {
+        if (e instanceof Error) {
           console.error(
-            'Timeout while connecting to API. Are you SURE you started the API? Try opening a separate terminal session and running "npm run start:server"'
+            'Timeout/Failure while connecting to API. Are you SURE you started the API? Try opening a separate terminal session and running "npm run start:server"'
           );
         }
 
